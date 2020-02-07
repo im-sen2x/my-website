@@ -187,11 +187,11 @@ body{
     cursor: pointer;
 }
 
-.experience-container1:hover > div.experience-learnmore1{
+.experience-container1:hover > div{
     color: white;
 }
 
-.experience-container2:hover > div.experience-learnmore2{
+.experience-container2:hover > div{
     color: white;
 }
 

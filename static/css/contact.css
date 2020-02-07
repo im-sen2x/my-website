@@ -1,0 +1,222 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #272727;
+    
+}
+
+header{
+    display: none;
+    background-color: #272727;
+    justify-content: center;
+    align-items: center;
+
+}
+#inquiry-form-container{
+    margin-top: 15vh;
+}
+
+.j-icon-container{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.j-icon{
+    height: 75px;
+    width: 75px;
+    display: block;
+    object-fit: contain;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 80%;
+}
+
+@media only screen and (min-width: 1000px){
+    
+    .j-icon-container{
+        width: 10%;
+    }
+
+    header ul{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 600px){
+    header{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 2px solid #E5E5E5;
+    }
+
+    header ul > li{
+        height: 8vh;
+        margin: 0 0.6em;
+        padding: 1em 0;
+        cursor: pointer;
+        color: white;
+    }
+
+    header ul > li:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    header ul > li a{
+        font-size: 0.7rem;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 770px){
+    header ul > li{
+        height: 8vh;
+        margin: 0 1.2em;
+    }
+    
+    header ul > li a{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    header ul > li{
+        height: 8vh;
+        margin: 0 1.5em;
+    }
+}
+
+
+input{
+    display: block;
+}
+
+#inquiry-form > h3{
+    margin-left: 1em;
+}
+
+textarea{
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
+    height: 200px;
+    display: block;
+}
+
+textarea::placeholder{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#inquiry-form{
+    display: flex;
+    flex-direction: column;        
+    border: 1.25px solid rgba(39, 39, 39, 0.7);
+    border-radius: 4px;
+    box-shadow: 0px 0px 7px gray;
+    margin: 2.5em;
+    background-color: #F8F8F8;
+}
+
+@media only screen and (min-width: 500px){
+    #inquiry-form{
+        margin: 2.5em 6em;
+    }
+}
+
+
+@media only screen and (min-width: 700px){
+    #inquiry-form{
+        margin: 2.5em 10em;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    #inquiry-form{
+        margin: 2.5em 20em;
+    }
+
+    #inquiry-form > h3{
+        font-size: 1.5rem;
+    }
+}
+
+.form-box{
+    margin: 1em auto;
+    width: 80%;
+    padding: 0.5em 0.5em;
+    border: 1px solid rgba(39, 39, 39, 0.7);
+    border-radius: 3px;
+}
+
+form input:first-child{
+    margin: 3em auto 1em auto;
+}
+
+#button{
+    width: 40%;
+    font-size: 0.8rem;
+    padding: 0.5em;
+    color: #272727;
+    background-color: lightgrey;
+    border: 1px solid #272727;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin: 1em 1em 1em 0;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px){
+    #button{
+        width: 30%;
+    }
+}
+
+#button:hover{
+    color: white;
+    background-color: #5CD052;
+    border: 1px solid #5CD052;
+}
+
+#button:active{
+    color: white;
+    background-color: #5CD052;
+    border: 1px solid #5CD052;
+    box-shadow: 0px 0px 3px 2px green;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+    background-color: #272727;
+    height: 15vh;
+}
+
+@media only screen and (min-width: 700px){
+    footer{
+        font-size: 1.1rem;
+    }
+}

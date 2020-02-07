@@ -5,106 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Jansen</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,500,600,700&display=swap" rel="stylesheet">     <!-- <link rel="stylesheet" href="style.css"> -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
     <link rel="stylesheet" type="text/css" href="../css/hamburger.css">
+    <link rel="stylesheet" type="text/css" href="../css/cirrolytix_modal.css">
     <link rel="icon" href="../favicon/favicon.ico">
-    <style>
-        
-        html{
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        *, *:before, *:after{
-            box-sizing: inherit;
-        }
-
-        body{
-            margin: 0;
-            padding: 0;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 500;
-            color: #272727;
-            
-        }
-        
-        input{
-            display: block;
-        }
-        
-        textarea{
-            resize: none;
-            height: 200px;
-            display: block;
-        }
-
-        textarea::placeholder{
-            font-family: 'Open Sans', sans-serif;
-        }
-        
-        #inquiry-form{
-            display: flex;
-            flex-direction: column;        
-            border: 1.25px solid rgba(39, 39, 39, 0.7);
-            border-radius: 4px;
-            box-shadow: 0px 0px 7px gray;
-            margin: 2.5em;
-            background-color: #F8F8F8;
-        }
-        
-        .form-box{
-            margin: 1em auto;
-            width: 80%;
-            padding: 0.5em 0.5em;
-            border: 1px solid rgba(39, 39, 39, 0.7);
-            border-radius: 3px;
-        }
-
-        form input:first-child{
-            margin: 3em auto 1em auto;
-        }
-
-        button{
-            width: 50%;
-            font-size: 0.8rem;
-            padding: 0.5em;
-            color: #272727;
-            background-color: lightgrey;
-            border: 1px solid #272727;
-            border-radius: 5px;
-            align-self: flex-end;
-            margin: 1em 1em 1em 0;
-            cursor: pointer;
-        }
-
-        button:hover{
-            color: white;
-            background-color: #5CD052;
-            border: 1px solid #5CD052;
-        }
-
-        button:active{
-            color: white;
-            background-color: #5CD052;
-            border: 1px solid #5CD052;
-            box-shadow: 0px 0px 3px 2px green;
-
-        }
-
-        footer{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 0.8rem;
-            background-color: #272727;
-            height: 15vh;
-        }
-
-
-        
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script defer src="../js/contact.js"></script>
 </head>
 <body>
     <!-- <header>
@@ -119,12 +26,12 @@
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <div class="nav-mobile">
             <ul>
-                <li class="clickable"><a class="clickable mobile-list" href="../index.html">HOME</a></li>
-                <li class="clickable"><a class="clickable mobile-list" href="#about-jansen">ABOUT</a></li>
-                <li><a class="clickable mobile-list" href="#experiece">EXPERIENCE</a></li>
-                <li><a class="clickable mobile-list" href="#education">EDUCATION</a></li>
-                <li><a class="clickable mobile-list" href="#portfolio">PORTFOLIO</a></li>
-                <li><a class="clickable mobile-list" href="./contact/index.html">CONTACT</a></li>
+                <li class="clickable"><i class="fas fa-home"></i>&nbsp;<a class="clickable mobile-list" href="../index.html">HOME</a></li>
+                <li class="clickable"><i class="fas fa-address-card"></i>&nbsp;<a class="clickable mobile-list" href="../index.html">ABOUT</a></li>
+                <li><i class="fas fa-clock"></i>&nbsp;<a class="clickable mobile-list" href="../index.html">EXPERIENCE</a></li>
+                <li><i class="fas fa-user-graduate"></i>&nbsp;<a class="clickable mobile-list" href="../index.html">EDUCATION</a></li>
+                <!-- <li><a class="clickable mobile-list" href="#portfolio">PORTFOLIO</a></li> -->
+                <li><i class="fas fa-phone"></i>&nbsp;<a class="clickable mobile-list" href="index.html">CONTACT</a></li>
             </ul>
         </div>
         <label for="nav-toggle" class="nav-toggle-label clickable">
@@ -132,91 +39,41 @@
         </label>
     </div>
     <header>
-        <!-- <h1 styles="margin-top:10vh;">Inquiry Form</h1> -->
+        <div class="j-icon-container">
+            <img class="j-icon" src="../favicon/android-chrome-192x192.png">
+        </div>
+        <ul class="header-list">
+            <li><i class="fas fa-home"></i>&nbsp;<a href="../index.html">HOME</a></li>
+            <li><i class="fas fa-address-card"></i>&nbsp;<a href="../index.html">ABOUT</a></li>
+            <li><i class="fas fa-clock"></i>&nbsp;<a href="../index.html">EXPERIENCE</a></li>
+            <li><i class="fas fa-user-graduate"></i>&nbsp;<a href="../index.html">EDUCATION</a></li>
+            <!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
+            <li><i class="fas fa-phone"></i>&nbsp;<a href="index.html">CONTACT</a></li>
+        </ul>
     </header>
-
-    
-
-    <div style="margin-top:15vh;" class="div-body">
+    <div id="inquiry-form-container">
         <form id="inquiry-form">
             <h3>Inquiry Form</h3>
-            <input class="form-box" type="text" name="sender" placeholder="Name" autocomplete="off">
-            <input class="form-box" type="email" name="email" placeholder="Email" autocomplete="off">
-            <input class="form-box" type="text" name="title" placeholder="Title" autocomplete="off">
+            <input id="input-name" class="form-box" type="text" name="sender" placeholder="Name" autocomplete="off">
+            <input id="input-email" class="form-box" type="email" name="email" placeholder="Email" autocomplete="off">
+            <input id="input-title" class="form-box" type="text" name="title" placeholder="Title" autocomplete="off">
             <textarea class="form-box" name="message" placeholder="Leave a Message" autocomplete="off"></textarea>
-            <button type="submit">Submit Inquiry</button>
+            <button id="button" type="submit">Submit Inquiry</button>
         </form>
     </div>
-    <!-- <div class="notification is-primary is-light">
-        <button class="delete">X</button>
-        Primar lorem ipsum dolor sit amet, consectetur
-        adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
-        consectetur adipiscing elit
-      </div> -->
-    
-    <div class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          Any other Bulma elements you want
-          <!-- <div style="margin: 0 1em;" class="notification is-primary is-light"> -->
-            <!-- <button class="delete">X</button> -->
-            <!-- Thank you for your inquiry, I''ll get back at you as soon as I can. -->
-          <!-- </div> -->
-          
-          
-          <div class="box is-size-7" style="margin: 0 1em; color: white; background-color: #3ec46d;">
-            Thank you for your inquiry! I''ll get back at you as soon as I can.
-            </div>
+    <div id="cirro-modal" class="cirro-modal">
+        <div class="cirro-modal-content">
+            <div class="cirro-modal-close clickable">&times;</div>
+            <p class="cirro-modal-message"></p>
+            <button class="cirro-modal-button clickable" type="button">OK</button>
         </div>
-        <!-- <div>SSSS</div> -->
-        <!-- <button style="z-index: 1000; color:violet" class="modal-close is-large" aria-label="close">X</button> -->
-        <!-- <button style="position: fixed; top: 60px; right: 35px; width: 40px;" class="modal-close is-medium" aria-label="close">X</button> -->
-      </div>
+    </div>
+    
     <footer>
         &copy; Jansen Lopez 2020 
     </footer>
 </body>
 <script>
-    const mobileLists = document.querySelectorAll(".mobile-list")
-
-    // Change hover aesthetics of the mobile nav bar
-    mobileLists.forEach(element => {
-        
-        // on hover change the text color to white with a light grey backdrop
-        element.onmouseover = function(event){
-            this.style.color = "white"
-            this.parentElement.style.backgroundColor = "#D3D3D3"
-        }
-
-        // on hover out revert back the original text color of "black-ish" with a white backdrop
-        element.onmouseout = function(event){
-            this.style.color = "#272727"
-            this.parentElement.style.backgroundColor = "white" 
-        }
     
-    })
-
-    // Send the inquiry to my Gmail
-    const inquiryForm = document.getElementById("inquiry-form")
-    const formValues = new FormData(inquiryForm)
-    inquiryForm.onsubmit = function(e){
-        e.preventDefault()
-        document.querySelector(".modal").className = "modal is-active"
-        fetch("/contact", {
-            method: "POST",
-            cache: "no-cache",
-            credentials: "same-origin",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                "sender": this[0].value,
-                "email": this[1].value,
-                "title": this[2].value,
-                "message": this[3].value
-            })
-        }).then(message => console.log(message)).
-        catch(err => console.log(err))
-    }
 </script>
 </html>
