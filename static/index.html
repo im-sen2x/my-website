@@ -4,9 +4,411 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Jansen Lopez</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,500,600,700&display=swap" rel="stylesheet">     <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="icon" href="favicon/favicon.ico">
+    <style>
+        html{
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        *, *:before, *:after{
+            box-sizing: inherit;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+            color: #272727;
+        }
+/* 
+
+        .header-list{
+            display: flex;
+            font-size: 0.7rem;
+            list-style-type: none;
+        }
+
+        .header-list li{
+            margin: 0 0.5em;
+        } */
+/* 
+        .hero-section{
+            color: white;
+            font-size: 0.80rem;
+            font-weight: 600;
+            height: 100vh;
+            background-image: url("./imgs/light-bulb.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 1px 1px 3px white;
+        } */
+
+        /* .certificate-logo{
+            display: block;
+            object-fit: contain;
+            height: 50px;
+            width: 50px;
+    }
+
+.certificate-title{
+    font-size: 0.75rem;
+} */
+
+/* footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+    background-color: #272727;
+    height: 15vh;
+} */
+
+
+
+/* BURGER */
+/* .header-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    z-index: 999;
+    color: black;
+    background-color: white; */
+    /* background-color: yellow; */
+/* } */
+
+
+/* @media only screen and (min-width: 520px){
+    .header-mobile{
+        display: none;
+    }
+} */
+
+/* .nav-mobile{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    border-top: 2px solid #E5E5E5; */
+    /* burger-out */
+    /* transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+} */
+
+
+/* .nav-mobile > ul{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+} */
+
+/* .nav-mobile li{
+    list-style-type: none;
+    font-size: 0.75rem;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+} */
+
+/* .nav-mobile a{
+    text-decoration: none;
+    color: inherit;
+} */
+
+/* .nav-mobile li:first-child{
+    margin-top: 0.5em;
+}
+
+.nav-mobile li:last-child{
+    margin-bottom: 1em;
+}
+
+.nav-mobile a{
+    text-decoration: none;
+    color: inherit; 
+    font-size: 0.75rem; */
+    /* burger-out */
+    /* opacity: 0;
+    transition: opacity 100ms ease-in-out;
+    
+} */
+
+/* ACTION */
+/* .nav-toggle{
+    display: none;
+
+.nav-toggle:checked ~ div a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+} */
+
+/* ACTION */
+
+/* .nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+} */
+
+/* .nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    background-color: black;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+
+ */
+
+/* BURGER */
+</style>
 </head>
 <body>
-    "Page Under Construction We'll be done by Feb 10 :)"
+    <!-- <div>
+    </div> -->
+    <div id="header-mobile" class="header-mobile">
+        <!-- <div class="header-badge-img"><img src="images/sparta_logo_allan_white_ember.png" alt="sparta logo ember"></div> -->
+        <!-- <div class="header-badge-img"><img src="images/sparta_logo_burg.png" alt="sparta logo ember"></div> -->
+        <!-- <div class="header-badge-sparta">Smarter Philippines through Data Analytics R&D, Training and Adoption</div> -->
+        
+        <!-- click span -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <div class="nav-mobile">
+            <ul>
+                <li class="clickable"><i class="fas fa-home"></i>&nbsp;<a class="clickable mobile-list" href="index.html">HOME</a></li>
+                <li class="clickable"><i class="fas fa-address-card"></i>&nbsp;<a class="clickable mobile-list" href="#about-jansen">ABOUT</a></li>
+                <li><i class="fas fa-clock"></i>&nbsp;<a class="clickable mobile-list" href="#experience">EXPERIENCE</a></li>
+                <li><i class="fas fa-user-graduate"></i>&nbsp;<a class="clickable mobile-list" href="#education">EDUCATION</a></li>
+                <!-- <li><a class="clickable mobile-list" href="#portfolio">PORTFOLIO</a></li> -->
+                <li><i class="fas fa-phone"></i>&nbsp;<a class="clickable mobile-list" href="./contact/index.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <label for="nav-toggle" class="nav-toggle-label clickable">
+            <span></span>
+        </label>
+    </div>
+    <div>
+        <div class="hero-section">
+            <div class="header-list-container">
+                <ul class="header-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about-jansen">ABOUT</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
+                    <li><a href="./contact/index.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <!-- <li class="clickable"><a class="clickable mobile-list" href="#about-jansen">HOME</a></li>
+            <li class="clickable"><a class="clickable mobile-list" href="#about-jansen">ABOUT</a></li>
+            <li><a class="clickable mobile-list" href="#experiece">EXPERIENCE</a></li>
+            <li><a class="clickable mobile-list" href="#education">EDUCATION</a></li>
+            <li><a class="clickable mobile-list" href="#portfolio">PORTFOLIO</a></li>
+            <li><a class="clickable mobile-list" href="./contact/index.html">CONTACT</a></li> -->
+
+
+
+
+            <div class="hero-phrase">
+                BUSINESS ANALYST & SOFTWARE ENGINEERING
+            </div>
+        </div>
+        <div id="about-jansen">
+            <div>
+            Greetings! I am Jansen Lopez, a Freelance Business Analyst and Software Engineer in the Philippines. From being a Licensed Electrical Engineer, I've successfuly transitioned
+            my career towards Business Analytics, Software Engineering, and Social Impact. Most of the work I've done involves automation of business processes
+            starting from data capture up to data visualization with data extraction capabilites so that the Analytics Team(including me) can create specific reports, diagnosis, or interesting findings
+            that may help business efficiency, cost reduction, and revenue generation by utilizing well-known Data Science methodologies such as Forecasting, Classification, Clustering, and Dimensionality Reduction.
+            On the Social side of things, I was fortunate to be the Geospatial Analyst of a Dengue Forecasting initiative called <a class="aedes" href="http://aedesproject.org/" target="_blank">AEDES Project</a> which won the Global Award for the "Best Use of Data" Category
+            in the 2019 edition of <a class="nasa" href="https://2019.spaceappschallenge.org/challenges/living-our-world/smash-your-sdgs/teams/aedes-project/project" target="_blank">NASA SPACE APPS HACKATHON</a>. I detected Dengue hotspots using NASA and ESA's satellite images which after some post processing will result in a stagnant water index that will quantify the
+            degree of Dengue "prone-ness" of particular location. I primarily work remotely with a flexible schedule but in the event that a project or a task needs physical presence, depending on the arrangements, I can be there.
+            If you'd like to further inquire about my services you can contact me by clicking this <a class="link" href="./contact/index.html">LINK</a> or by following any of my contact points below.
+            </div>
+            <br>
+            <div>
+                <div>Linkedin: https://www.linkedin.com/in/jansen-lopez/</div>
+                <div>Email: lopez.jansend@gmail.com</div>
+            </div>
+            <br>
+            <div class="cheers">Cheers!</div> 
+        </div>
+        <div id="experience" class="experience">
+            <h4 class="headings"> Relevant Work Experience</h4>
+            <div class="experience-container">
+                <div class="experience-container1">
+                    <div class="experience-heading">Cirrolytix Research Services (2017 - present)</div>
+                    <div class="experience-role">Data Analyst x Web Developer</div>
+                    <div class="experience-learn-more1"><div class="gt1">&gt;</div>
+                        <div>Learn More</div>
+                    </div>
+                    <div class="more-info1">
+                        <ul class="more-info-list">
+                            <li>Currently Developing four portals(Infosite, openData portal, Project Monitoring and Evaluation platform, Hackathon portal) for PROJECT SPARTA(The Philippine’s initiative to train 30k Data Scholars in 3 years). Aside from the actual development the Architectural Design of the tech infrastructure is part of my responsibility.</li>
+                            <li>Developed and deployed an image (retail producsts) auto-tagging web app to make it easy for workers to tag images (retail products) that will be used in training an Object Detection AI.</li>
+                            <li>Assisted in an Analytics Template for an FMCG Company using Retail Data. The most valuable modules on the template were 1. Use the a priori algorithm to know which two products are more likely to be bought together a classic Market Basket Analysis use-case. 2. Did affinity analysis on product categories strongly linked using ensemble methods such as clustering, multi-dimensionality scaling, and a distance function to measure the affinity. The results came to be suggestions on which categories should be placed together in a physical store.</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="experience-container2">
+                    <div class="experience-heading">InboundLabs (2017 – 2019)</div>
+                    <div class="experience-role">Data Manager</div>
+                    <div class="experience-learn-more2"><div class="gt2">&gt;</div>
+                        <div>Learn More</div>
+                    </div>
+                    <div class="more-info2">
+                        <ul class="more-info-list"> 
+                            <li>Capture, Clean, and Manage all incoming user data from the website to assess the business’ health in the front-end. These reports were processed using Python and Google Sheets which are generated and reported on a monthly, quarterly and annual basis. </li>
+                            <li>Developed an automated data cleaning and data reporting pipeline that extracts data from Hubspot and into Google Sheets using the automation tool integromat.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="education" class="education">
+            <h4 class="headings">Education, Certificates, and Awards</h4>
+            <div class="education-orientation">
+                <div class="education-container">
+                    <img class="certificate-logo" src="imgs/nasa_logo.png">
+                    <div class="certificate-title">GLOBAL WINNER : NASA SPACE APPS CHALLENGE - <span><a href="https://courses.edx.org/certificates/2622647a873548fdaba12701e7166f1c"> (Verified Link)</a></span></div>
+                </div>
+                <div class="education-container">
+                    <img class="certificate-logo" src="imgs/ust_logo.png">
+                    <div class="certificate-title">University of Santo Tomas Class of 2011 - Bachelor of Science in Electrical Engineering <span><a href="https://courses.edx.org/certificates/2622647a873548fdaba12701e7166f1c"> (Verified Link)</a></span></div>
+                </div>
+                <div class="education-container">
+                    <img class="certificate-logo" src="imgs/mitx_logo.jpg">
+                    <div class="certificate-title">6.431x: Probability - The Science of Uncertainty and Data
+                    Education & Certificates<span><a href="https://courses.edx.org/certificates/2622647a873548fdaba12701e7166f1c"> (Verified Link)</a></span></div>
+                </div>
+                <div class="education-container">
+                    <img class="certificate-logo" src="imgs/mitx_logo.jpg">
+                    <div class="certificate-title">6.00.2x: Introduction to Computational Thinking and Data Science<span><a href="https://verify.edx.org/cert/3874669ca2904844a3ca982e27ef0a2e"> (Verified Link)</a></span></div>
+                </div>
+                <div class="education-container">
+                    <img class="certificate-logo" src="imgs/georgetown.png">
+                    <div class="certificate-title">INFX523-01: Globalization's Winners and Losers: Challenges for Developed and Developing Countries<span><a href="https://s3.amazonaws.com/verify.edx.org/downloads/267b8be4b2a641498bb14eb75c02bb28/Certificate.pdf"> (Verified Link)</a></span></div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- <div>
+            <h4 class="headings">Portfolio</h4>
+            <div class="education-orientation">
+            </div>
+        </div> -->
+    <footer>
+        &copy; Jansen Lopez 2020 
+    </footer>
 </body>
+<script>
+    const mobileLists = document.querySelectorAll(".mobile-list")
+    // Change hover aesthetics of the mobile nav bar
+    mobileLists.forEach(element => {
+        
+        // on hover change the text color to white with a light grey backdrop
+        element.onmouseover = function(event){
+            this.style.color = "white"
+            this.parentElement.style.backgroundColor = "#D3D3D3"
+        }
+
+        // on hover out revert back the original text color of "black-ish" with a white backdrop
+        element.onmouseout = function(event){
+            this.style.color = "#272727"
+            this.parentElement.style.backgroundColor = "white" 
+        }
+    
+    })
+
+    const greaterThan1 = document.querySelector(".gt1")
+    const greaterThan2 = document.querySelector(".gt2")
+    const moreInfo1 = document.querySelector(".more-info1")
+    const moreInfo2 = document.querySelector(".more-info2")
+
+    // const learnMore1 = document.querySelector(".experience-learn-more1")
+    // const learnMore2 = document.querySelector(".experience-learn-more2")
+
+    const learnMore1 = document.querySelector(".experience-container1")
+    const learnMore2 = document.querySelector(".experience-container2")
+
+    learnMore1.onclick = function(){
+        if(!greaterThan1.className.includes("rotated")){
+            greaterThan1.style.transform = "rotate(90deg)"
+            greaterThan1.className = "gt1 rotated"
+            moreInfo1.style.transition = "width 100ms, height 100ms, transform 10ms ease-in-out , opacity 300ms ease-in-out"
+            moreInfo1.style.transform = "scale(1, 1)"
+            moreInfo1.style.opacity = 1
+            moreInfo1.style.width = "auto"
+            moreInfo1.style.height = "auto"
+        }
+        else{
+            greaterThan1.style.transform = "rotate(0deg)"
+            greaterThan1.className = "gt1"
+            moreInfo1.style.opacity = 0
+            moreInfo1.style.width = 0
+            moreInfo1.style.height = 0
+            moreInfo1.style.transform = "scale(0, 0)"
+        }
+    }    
+
+    learnMore2.onclick = function(){
+        if(!greaterThan2.className.includes("rotated")){
+            greaterThan2.style.transform = "rotate(90deg)"
+            greaterThan2.className = "gt2 rotated"
+            moreInfo2.style.transition = "width 100ms, height 100ms, transform 10ms ease-in-out , opacity 300ms ease-in-out"
+            moreInfo2.style.transform = "scale(1, 1)"
+            moreInfo2.style.opacity = 1
+            moreInfo2.style.width = "auto"
+            moreInfo2.style.height = "auto"
+        }
+        else{
+            greaterThan2.style.transform = "rotate(0deg)"
+            greaterThan2.className = "gt2"
+            moreInfo2.style.opacity = 0
+            moreInfo2.style.width = 0
+            moreInfo2.style.height = 0
+            moreInfo2.style.transform = "scale(0, 0)"
+        }
+    }
+</script>
 </html>

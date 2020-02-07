@@ -1,0 +1,125 @@
+/* BURGER */
+.header-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+    z-index: 999;
+    color: black;
+    background-color: white;
+    border-bottom: 2px solid #E5E5E5;
+    /* background-color: yellow; */
+}
+
+@media only screen and (min-width: 600px){
+    .header-mobile{
+        display: none;
+    }
+}
+
+.nav-mobile{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    border-top: 2px solid #E5E5E5;
+    /* burger-out */
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+.nav-mobile > ul{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.nav-mobile li{
+    list-style-type: none;
+    font-size: 0.75rem;
+    padding: 0.2em 0.5em;
+    margin-bottom: 0.5em;
+    /* margin-left: 0.5em; */
+}
+
+/* .nav-mobile a{
+    text-decoration: none;
+    color: inherit;
+} */
+
+.nav-mobile li:first-child{
+    margin-top: 0.5em;
+}
+
+.nav-mobile li:last-child{
+    margin-bottom: 1em;
+}
+
+.nav-mobile a{
+    text-decoration: none;
+    color: inherit; 
+    font-size: 0.75rem;
+    /* burger-out */
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+    
+}
+
+/* ACTION */
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle:checked + div{
+    transform: scale(1, 1)
+}
+
+.nav-toggle:checked ~ div a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* ACTION */
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    background-color: black;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+
+/* BURGER */
